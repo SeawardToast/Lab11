@@ -1,8 +1,15 @@
 #include <iostream>
 #include "table1.h"
+using namespace main_savitch_12A;
 
 int main() {
 	table<int> t;
-	for(int i = 0; i < 5; i++)
-		t.insert(i+1);
+	t.insert(3);
+    t.insert(19);
+    t.insert(51);
+    t.insert(67);
+    t.insert(85);
+    std::cout << "Printing Table" << std::endl;
+    t.print();
+        
 }

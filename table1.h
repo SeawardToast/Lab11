@@ -65,6 +65,8 @@ namespace main_savitch_12A
         bool is_present(int key) const;
         void find(int key, bool& found, RecordType& result) const;
         std::size_t size( ) const { return used; }
+        int collisions;
+        void print();
     private:
         // MEMBER CONSTANTS -- These are used in the key field of special records.
         static const int NEVER_USED = -1;
@@ -78,9 +80,7 @@ namespace main_savitch_12A
         void find_index(int key, bool& found, std::size_t& index) const;
         bool never_used(std::size_t index) const;
         bool is_vacant(std::size_t index) const;
-		inline std::size_t hash2(int key) const{
-			return ((key+4) % CAPACITY);
-		}
+		inline std::size_t hash2(int key, int collisions) const;
 			
 		
     };

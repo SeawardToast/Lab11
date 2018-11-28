@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Lab11
 ConfigurationName      :=Debug
-WorkspacePath          :=/home/aidan/Documents/codelite-workspace/labs_workspace
-ProjectPath            :=/home/aidan/Documents/codelite-workspace/labs_workspace/Lab11
+WorkspacePath          :=/home/aidan/Documents/workspace
+ProjectPath            :=/home/aidan/Documents/workspace/Lab11
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Aidan Murphy
-Date                   :=13/11/18
+User                   :=aidan
+Date                   :=28/11/18
 CodeLitePath           :=/home/aidan/.codelite
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/aidan/Documents/codelite-workspace/labs_workspace/Lab11/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/aidan/Documents/workspace/Lab11/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 
